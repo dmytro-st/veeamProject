@@ -1,0 +1,8 @@
+ALL_DEPARTMENTS = "All departments"
+QUALITY_ASSURANCE = "Quality Assurance"
+TECHNICAL_CUSTOMER_SUPPORT = "Technical Customer Support "
+CORPORATE_TECHNOLOGY = "Corporate Technology"
+RESEARCH_AND_DEVELOPMENT = "Research & Development"
+HR = "HR"
+TECHNICAL_DOCUMENTATION_DEVELOPMENT = "Technical Documentation Development"
+PRODUCT_MANAGEMENT = "Product Management  "
