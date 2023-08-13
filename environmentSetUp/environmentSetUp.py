@@ -9,13 +9,12 @@ class EnvironmentSetUp(unittest.TestCase):
 
     def initialize(self):
         global Instance
-        Instance = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--start-maximized")  # Maximize browser window
         chrome_options.add_argument("--disable-infobars")  # Disable info bars
         chrome_options.add_argument("--disable-extensions")  # Disable extensions
         chrome_options.add_argument("--disable-gpu")  # Disables GPU hardware acceleration
-        Instance = webdriver.Chrome(options=chrome_options)
+        Instance = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
         Instance.implicitly_wait(5)
         return Instance
 
