@@ -11,6 +11,7 @@ class EnvironmentSetUp:
         chrome_options.add_argument("--disable-infobars")  # Disable info bars
         chrome_options.add_argument("--disable-extensions")  # Disable extensions
         chrome_options.add_argument("--disable-gpu")  # Disables GPU hardware acceleration
+        chrome_options.add_argument('--headless')
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
         self.driver.implicitly_wait(5)
         return self.driver
