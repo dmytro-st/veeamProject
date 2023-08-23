@@ -19,7 +19,7 @@ class VeeamVacanciesTest(EnvironmentSetUp, unittest.TestCase):
         vacancies_page.department_select(department.RESEARCH_AND_DEVELOPMENT)
         vacancies_page.language_select(language.ENGLISH)
         jobs = vacancies_page.get_amount_of_jobs()
-        Verifier.compare_amount(jobs, 3)
+        Verifier.compare_amount(jobs, 5)
 
     def test_amount_of_all_german_jobs(self):
         vacancies_page = Vacancies(self.driver)
